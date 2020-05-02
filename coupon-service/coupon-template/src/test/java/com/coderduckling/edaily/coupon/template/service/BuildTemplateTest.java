@@ -1,13 +1,12 @@
 package com.coderduckling.edaily.coupon.template.service;
 
 import com.alibaba.fastjson.JSON;
-import com.coderduckling.edaily.coupon.template.common.constant.CouponCategory;
-import com.coderduckling.edaily.coupon.template.common.constant.DistributeTarget;
-import com.coderduckling.edaily.coupon.template.common.constant.PeriodType;
-import com.coderduckling.edaily.coupon.template.common.constant.ProductLine;
-import com.coderduckling.edaily.coupon.template.common.vo.TemplateRule;
-import com.coderduckling.edaily.coupon.template.template.service.IBuildTemplateService;
-import com.coderduckling.edaily.coupon.template.template.vo.TemplateRequest;
+import com.coderduckling.edaily.coupon.common.constant.CouponCategory;
+import com.coderduckling.edaily.coupon.common.constant.DistributeTarget;
+import com.coderduckling.edaily.coupon.common.constant.PeriodType;
+import com.coderduckling.edaily.coupon.common.constant.ProductLine;
+import com.coderduckling.edaily.coupon.common.vo.TemplateRule;
+import com.coderduckling.edaily.coupon.template.vo.TemplateRequest;
 import org.apache.commons.lang3.time.DateUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -49,7 +48,7 @@ public class BuildTemplateTest {
         request.setDesc("这是一张优惠券模板");
         request.setCategory(CouponCategory.MANJIAN.getCode());
         request.setProductLine(ProductLine.DAMAO.getCode());
-        request.setCount(10000);
+        request.setCount(1000);
         request.setUserId(10001L);  // fake user id
         request.setTarget(DistributeTarget.SINGLE.getCode());
 

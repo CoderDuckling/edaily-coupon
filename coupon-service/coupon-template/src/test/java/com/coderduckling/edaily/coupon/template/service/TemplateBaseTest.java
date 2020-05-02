@@ -1,8 +1,7 @@
 package com.coderduckling.edaily.coupon.template.service;
 
 import com.alibaba.fastjson.JSON;
-import com.coderduckling.edaily.coupon.template.common.exception.CouponException;
-import com.coderduckling.edaily.coupon.template.template.service.ITemplateBaseService;
+import com.coderduckling.edaily.coupon.common.exception.CouponException;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
